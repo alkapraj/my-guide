@@ -1,0 +1,110 @@
+CREATE DATABASE rewards;
+USE rewards;
+
+-- Create Table:
+CREATE TABLE user1(
+									userId int(11) AUTO_INCREMENT key,
+									userName varchar(100),
+									password varchar(100),
+									firstName varchar(100),
+									lastName varchar(100),
+									role varchar 100,
+									primary key(userId)
+								)
+ENGINE MyISAM;
+
+describe user1;
+
+CREATE TABLE account(
+									accountId int(11) AUTO_INCREMENT key,
+									userId int(11),
+									accountType varchar(100),
+									points int(50),
+									primary key(accountId)
+								)
+ENGINE MyISAM;
+
+describe account;
+
+CREATE TABLE redemption(
+											redeemId int(11) AUTO_INCREMENT key,
+											date varchar(100),
+											accountId int(11),
+											cardId int(11),
+											pointsRedeemed int(50),
+											primary key(redeemId)
+								)
+ENGINE MyISAM;
+
+describe redemption;
+
+CREATE TABLE giftcard(
+									cardId int(11) AUTO_INCREMENT key,
+									cardName varchar(100),
+									cardType varchar(100),
+									cardValue float(10),
+									points int(50),
+									image_path varchar(100),
+									primary key(cardId)
+								)
+ENGINE MyISAM;
+
+describe giftcard;
+
+insert into user1(userId, userName, password, firstName, lastName, role)
+values('1','user1','abc1','first1','last1','admin');
+insert into user1(userId, userName, password, firstName, lastName, role)
+values('2','user2','abc2','first2','last2','admin');
+insert into user1(userId, userName, password, firstName, lastName, role)
+values('3','user3','abc3','first3','last3','admin');
+insert into user1(userId, userName, password, firstName, lastName, role)
+values('4','user4','abc4','first4','last4','customer');
+insert into user1(userId, userName, password, firstName, lastName, role)
+values('5','user5','abc5','first5','last5','customer');
+insert into user1(userId, userName, password, firstName, lastName, role)
+values('6','user6','abc6','first6','last6','customer');
+
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('1','Moana Watch','watch','1000','500','Images/moanawatch.bmp');
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('2','Armani Watch','watch','1001','500','Images/armaniwatch.jpg');
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('3','Giordano Watch','watch','1002','500','Images/giordanowatch.jpg');
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('4','Tommy Hilfiger Watch','watch','1003','500','Images/tommyhilfigerwatch.jpg');
+
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('5','levis jacket','jacket','1004','550','Images/levisjacket.jpg');
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('6','macy jacket','jacket','1005','550','Images/macyjacket.jpg');
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('7','tommy hilfiger jacket','jacket','1006','550','Images/tommyhilfigerjacket.jpg');
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('8','versace jacket','jacket','1007','550','Images/versacejacket.jpg');
+
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('9','versace shoes','shoes','1008','560','Images/versaceshoes.jpg');
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('10','addidas shoes','shoes','1009','560','Images/addidasshoes.jpg');
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('11','gucci shoes','shoes','1010','560','Images/guccishoes.jpg');
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('12','nike shoes','shoes','1011','560','Images/nikeshoes.jpg');
+
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('13','Acics Bag','bag','1012','570','Images/acicsbag.jpg');
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('14','Addidas Bag','bag','1013','570','Images/addidasbag.jpg');
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('15','Nike Bag','bag','1014','570','Images/nikebag.jpg');
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('16','Tommy hilfiger Bag','bag','1015','570','Images/tommyhilfigerbag.jpg');
+
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('17','Everlast Bottle','bottle','1016','510','Images/everlast bottle.jpg');
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('18','Addidas Bottle','bottle','1017','510','Images/addidasbottle.jpg');
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('19','Nike Bottle','bottle','1018','510','Images/nikebottle.jpg');
+insert into giftcard(cardId,cardName,cardType,cardValue,points,image_path)
+values('20','Viva bottle','bottle','1019','510','Images/vivabottle.jpg');

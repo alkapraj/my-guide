@@ -1,0 +1,74 @@
+.row
+{
+	display: table;
+}
+.row75
+{
+	display: table-row;
+	width: 75%;
+	float:left;
+}
+.row-auto
+{
+	display: table-row;
+	float:left;
+	width: 25%;	
+	height: 100%;	
+	background-color: blue;
+}
+.column25
+{
+	width: 		25%;
+	display: 	table-cell;
+	float: 		left;
+}
+.column33
+{
+	width: 		33.33%;
+	display: 	table-cell;
+	float: 		left;
+}
+.column50
+{
+	width: 		50%;
+	display: 	table-cell;
+	float: 		left;
+}
+.column75
+{
+	width: 		75%;
+	display: 	table-cell;
+	float: 		left;
+}
+.column67
+{
+	width: 		66%;
+	display: 	table-cell;
+	float: 		left;
+}
+.center
+{
+	text-align: center;
+}
+#add
+{
+	display: block;
+	text-align: right;
+}
+fieldset
+{
+  display:content;
+  outline: light solid gray;
+  height: 50%;
+}
+#fieldset1
+{
+  display: content;
+  outline: light solid gray;
+  height: 50%;  
+  width: auto;
+}
+.block
+{
+	display: block;
+}

@@ -1,0 +1,38 @@
+<html>
+	<head>	
+		<!-- Head tag contains the metadata defined by tags like title, meta, style, link, script. The METADATA is not Displayed -->
+		<title>Login Page - Cowboy Rental Properties</title>
+		<!-- Link for linking ext style sheets -->
+			<link 		rel="stylesheet" 			href="styling.css">
+			<link 		rel="stylesheet" 			href="createAccValidation.css">
+			<script 	type='text/javascript' src='createAccValidation.js'></script>
+			<script 	type='text/javascript' src='commonValidations.js'></script> 
+	</head>
+	<body>
+			<div class="row">
+				<div class="column33"></div><div class="column33"></div><div class="column33"></div>								
+				<div class="cell"><img src="Images/Logo.png" 		width="50%" 	class="left"></img></div>				
+				<div></div>
+				<div class="cell"><img src="Images/login_logo.jpg" width="35%"	class="right"></img></div>		
+			</div>						
+		
+			<div class="row">
+				<div class="column33"></div><div class="column33"></div><div class="column33"></div>				
+				<div class="cell"></div>
+				<!-- CREATE ACC FORM -->
+				<div class="cell box">
+						<h2>Enter Account Details</h2>
+						<form method="post"   action="createAcc.php" onsubmit="return emptyFieldChk(this)">
+							<label class="left">Username:</label>				<input	name="username" 			type="text" 				value="" 			class="right"/><br><br>
+							<label class="left">Firstname:</label>				<input	name="firstname" 			type="text" 				value="" 			class="right"/><br><br>
+							<label class="left">Lastname:</label>				<input	name="lastname" 			type="text" 				value="" 			class="right"/><br><br>
+							<label class="left">Email:</label>						<input	name="email" 				type="text" 				value="" 			class="right"/><br><br>
+							<label class="left">Password:</label>				<input 	name="password1" 		type="password" 	class="right"/><br><br>
+							<label class="left">Confirm Password:</label>	<input 	name="password2" 		type="password" 	class="right"/><br><br>
+							<input type="submit" value="submit"/><br><br>
+						</form>
+				</div>			
+				<div class="cell"></div>
+			</div>			
+	</body>	
+</html>

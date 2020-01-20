@@ -1,0 +1,51 @@
+body
+{
+	display: 					table;
+	background-color: 	#CAEBF2;
+	width: 						100%;
+}
+.header
+{
+	height: 		10%;	
+}
+.row
+{
+	display: 		table-row;
+	height: 		10%;
+	width: 			100%;
+	text-align: 	center;
+}
+.column33
+{
+	display: 		table-column;
+	width: 			33.33%;
+}
+.column25
+{
+	display: 		table-column;
+	width: 			25%;
+}
+.column75
+{
+	display: 		table-column;
+	width: 			75%;
+}
+.cell
+{
+	display: table-cell;
+}
+.left
+{
+		float: left;
+}
+.right	
+{
+		float: right;
+}
+.box
+{
+		display: 			table;
+		border-style: 	solid;
+		border-color: 	navy;
+		padding: 			30px 30px 30px 30px;  
+}

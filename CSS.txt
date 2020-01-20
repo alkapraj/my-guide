@@ -1,0 +1,20 @@
+A table is divided into ROWS, and each row contains one or more cells. Cells are children of ROWS, they are NEVER children of columns.
+
+"display: table-column" does NOT provide a mechanism for making columnar layouts (e.g. newspaper pages with multiple columns, where content can flow from one column to the next).
+
+Rather, "table-column" ONLY sets attributes that apply to corresponding cells within the rows of a table. E.g. "The background color of the first cell in each row is green" can be described.
+
+The table itself is always structured the same way it is in HTML.
+
+<table ..>
+  <col .. />
+  <col .. />
+  <tr ..>
+    <td ..></td>
+    <td ..></td>
+  </tr>
+  <tr ..>
+    <td ..></td>
+    <td ..></td>
+  </tr>
+</table>

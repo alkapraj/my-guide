@@ -1,0 +1,15 @@
+-- Create a New Database
+CREATE DATABASE customer;
+USE customer;
+
+CREATE TABLE users(
+username varchar(100) NOT NULL,
+email varchar(254) NOT NULL,
+firstname varchar(100),
+lastname varchar(100),
+password varchar(100) NOT NULL,
+role varchar(20) NOT NULL,
+PRIMARY KEY(username),
+UNIQUE (email)
+)
+engine myisam;

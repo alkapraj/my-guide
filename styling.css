@@ -1,0 +1,26 @@
+body, form, input
+{
+	font-family: 			verdana;
+	font-size:					20px;
+	background-color: 	white;
+}
+.header
+{
+	font-family: 			verdana;
+	font-size:					22px;	
+	background-color: 	white;
+}
+.button
+{
+	font-family: 		verdana;
+	font-size:				20px;
+	padding: 				15px 32px;
+   text-align: 			center;
+   background-color: LightGray;
+   border-radius: 		15px;
+   color: 					black;
+}
+.content 
+{
+	background-color:  #f0f8ff;
+}
